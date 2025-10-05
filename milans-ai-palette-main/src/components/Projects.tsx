@@ -26,7 +26,7 @@ const Projects = memo(() => {
           {featuredProjects.map((project, index) => (
             <Card 
               key={project.id}
-              className="bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-300 animate-slide-in group overflow-hidden"
+              className="bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-300 animate-slide-in group overflow-hidden flex flex-col h-full"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative">
@@ -49,7 +49,7 @@ const Projects = memo(() => {
                 </CardTitle>
               </CardHeader>
               
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 flex flex-col h-full">
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   {project.description}
                 </p>
@@ -74,7 +74,7 @@ const Projects = memo(() => {
                   )}
                 </div>
                 
-                <div className="flex gap-2 pt-2">
+                <div className="flex gap-2 pt-2 mt-auto">
                   {project.githubUrl && (
                     <Button 
                       variant="outline" 
@@ -114,7 +114,7 @@ const Projects = memo(() => {
           {otherProjects.map((project, index) => (
             <Card 
               key={project.id}
-              className="bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-300 animate-slide-in group overflow-hidden"
+              className="bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-300 animate-slide-in group overflow-hidden flex flex-col h-full"
               style={{ animationDelay: `${(index + featuredProjects.length) * 0.1}s` }}
             >
               <div className="relative">
@@ -137,7 +137,7 @@ const Projects = memo(() => {
                 </CardTitle>
               </CardHeader>
               
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-3 flex flex-col h-full">
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   {project.description}
                 </p>
@@ -162,30 +162,30 @@ const Projects = memo(() => {
                   )}
                 </div>
                 
-                <div className="flex gap-2 pt-1">
+                <div className="flex gap-2 pt-2 mt-auto">
                   {project.githubUrl && (
                     <Button 
-                      variant="ghost" 
+                      variant="outline" 
                       size="sm" 
-                      className="flex-1 text-primary hover:bg-primary/10 transition-all duration-200"
+                      className="flex-1 border-primary/50 hover:bg-primary/10 hover:border-primary transition-all duration-200"
                       asChild
                     >
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-1 h-3 w-3" />
+                        <Github className="mr-2 h-4 w-4" />
                         Code
                       </a>
                     </Button>
                   )}
                   {project.liveUrl && (
                     <Button 
-                      variant="ghost" 
+                      variant="outline" 
                       size="sm" 
-                      className="flex-1 text-primary hover:bg-primary/10 transition-all duration-200"
+                      className="flex-1 border-primary/50 hover:bg-primary/10 hover:border-primary transition-all duration-200"
                       asChild
                     >
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-1 h-3 w-3" />
-                        Demo
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
                       </a>
                     </Button>
                   )}

@@ -138,7 +138,7 @@ export const PROJECTS = [
     category: "AI & Automation",
     icon: Code,
     githubUrl: "https://github.com/milanstankovic12345",
-    liveUrl: "https://doc-generator-demo.com",
+    liveUrl: null,
     featured: true
   },
   {
