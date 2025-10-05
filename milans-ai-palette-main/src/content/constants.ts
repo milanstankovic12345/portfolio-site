@@ -89,7 +89,7 @@ export const PROJECTS = [
     technologies: ["C#", "WPF", "TeamViewer API", "SQLite", "REST APIs"],
     category: "Technical Support",
     icon: Wrench,
-    githubUrl: "https://github.com/milanstankovic12345/remote-toolkit",
+    githubUrl: "https://github.com/milanstankovic12345",
     liveUrl: null,
     featured: false
   },
@@ -101,7 +101,7 @@ export const PROJECTS = [
     technologies: ["PowerShell", "SNMP", "Grafana", "InfluxDB", "Windows Server"],
     category: "Infrastructure",
     icon: Monitor,
-    githubUrl: "https://github.com/milanstankovic12345/network-monitor",
+    githubUrl: "https://github.com/milanstankovic12345",
     liveUrl: null,
     featured: true
   },
@@ -113,8 +113,8 @@ export const PROJECTS = [
     technologies: ["Power BI", "Python", "Machine Learning", "SQL Server", "Azure"],
     category: "AI & Automation",
     icon: Brain,
-    githubUrl: "https://github.com/milanstankovic12345/it-support-dashboard",
-    liveUrl: "https://it-dashboard-demo.com",
+    githubUrl: "https://github.com/milanstankovic12345",
+    liveUrl: null,
     featured: true
   },
   {
@@ -125,7 +125,7 @@ export const PROJECTS = [
     technologies: ["Power BI", "DAX", "SQL", "Excel", "SharePoint"],
     category: "Data Analytics",
     icon: Database,
-    githubUrl: "https://github.com/milanstankovic12345/data-viz-suite",
+    githubUrl: "https://github.com/milanstankovic12345",
     liveUrl: null,
     featured: false
   },
@@ -137,7 +137,7 @@ export const PROJECTS = [
     technologies: ["Python", "OpenAI API", "Markdown", "Git", "Docker"],
     category: "AI & Automation",
     icon: Code,
-    githubUrl: "https://github.com/milanstankovic12345/doc-generator",
+    githubUrl: "https://github.com/milanstankovic12345",
     liveUrl: "https://doc-generator-demo.com",
     featured: true
   },
@@ -149,8 +149,8 @@ export const PROJECTS = [
     technologies: ["Microsoft Power Platform", "SharePoint", "Power Automate", "Teams"],
     category: "Automation",
     icon: Zap,
-    githubUrl: null,
-    liveUrl: "https://workflow-automation-demo.com",
+    githubUrl: "https://github.com/milanstankovic12345",
+    liveUrl: null,
     featured: false
   }
 ] as const;
