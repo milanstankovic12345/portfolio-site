@@ -132,7 +132,7 @@ export const PROJECTS = [
   {
     id: 5,
     title: "GreenOps AI",
-    description: "AI-powered solution for energy consumption monitoring and optimization.",
+    description: "AI-powered solution for energy consumption monitoring and optimization. Project is demo for hackathon.",
     image: "/placeholder.svg",
     technologies: ["Machine Learning", "Power Bi", "Power Automate", "Python", "SQL Server"],
     category: "AI & Automation",
